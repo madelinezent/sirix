@@ -86,8 +86,8 @@ subprojects {
     apply plugin: "com.diffplug.spotless"
 
     java {
-        sourceCompatibility = JavaVersion.VERSION_19
-        targetCompatibility = JavaVersion.VERSION_19
+        sourceCompatibility = JavaVersion.VERSION_20
+        targetCompatibility = JavaVersion.VERSION_20
         withSourcesJar()
         withJavadocJar()
 
@@ -99,7 +99,7 @@ subprojects {
     javadoc {
         failOnError = false
         options {
-            addStringOption('-release', '19')
+            addStringOption('-release', '20')
             addBooleanOption('-enable-preview', true)
         }
     }
